@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+.banner{
+    height: 100px;
+    width: 100%;
+    background-color: #036e01;
+    position:fixed;
+}
+.navbar{
+    margin-top: -40px;
+    width: 95%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+img{
+    height: 180px;
+}
+.navbar ul{
+    margin-right: -60px;
+}
+.navbar ul li{
+    display: inline-block;
+    margin:0 70px;
+    font-size: 35px;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    position: relative;
+}
+.navbar ul li a{
+    color: #fff;
+}
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.container{
+    padding-top: 200px;
+}
+.fa-house, .fa-users-gear, .fa-user-circle,.fa-notes-medical {
+    font-size: 30px;
+    color: white;
+    margin-right: -60px;
+}
+table{
+    width: 100%;
+}
+table tr th img{
+    width: 300px;
+    height: auto;
+    mix-blend-mode: lighten;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+}
+td{
+    padding-top: 50px;
+    text-align: center;
+}
+.btn{
+    position: relative;
+    cursor: pointer;
+    width: 200px;
+    padding: 15px 0;
+    border: 2px solid #000;
+    border-radius: 25px;
+    font-weight: bold;
+    background: none;
+    transition: color 0.4s linear;
+}
+.btn a{
+    background: none;
+}
+.btn:hover{
+    color: #fff;
+
+}
+.btn::before{
+    content: "";
+    position:absolute;
+    background: #036e01;
+    border-radius: 25px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform: origin 10px;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.btn1::before{
+    transform: scaleX(0);
+}
+.btn1:hover::before{
+    transform: scaleX(1);
+}
+.container .popup{
+    width: 550px;
+    height: 600px;
+    margin-top: 45px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    border: 4px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.pop-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btton{
+  margin-top: 10px;
+  width: 120px;
+  height: 50px;
+  background-color: #036e01;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+.btton:hover{
+  background-color:rgb(159, 8, 8);
+    color: white;
+    transition: 0.5s;
+}
+h2{
+  padding-bottom: 20px;
+}

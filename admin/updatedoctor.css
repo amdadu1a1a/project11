@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+.banner{
+    height: 100px;
+    width: 100%;
+    background-color: #036e01;
+    position:fixed;
+}
+.navbar{
+    margin-top: -40px;
+    width: 95%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+img{
+    height: 180px;
+}
+.navbar ul{
+    margin-right: -60px;
+}
+.navbar ul li{
+    display: inline-block;
+    margin:0 70px;
+    font-size: 35px;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    position: relative;
+}
+.navbar ul li a{
+    color: #fff;
+}
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.fa-house, .fa-users-gear, .fa-user-circle,.fa-user-doctor {
+    font-size: 30px;
+    color: white;
+    margin-right: -60px;
+}
+.container{
+    padding-top: 150px;
+}
+h2{
+    padding-bottom: 30px;
+    text-align:center;
+    font-size:40px;
+    color: rgb(220, 30, 30);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-group label {
+    width: 40%;
+    text-align: left;
+    margin-left:20px;
+    padding-bottom: 10px;
+  }
+.form-group input[type="text"] {
+    margin-bottom: 15px; 
+    text-align: center;
+    width: 600px;
+    height: 40px;
+}
+.center-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .center-button button {
+    width: 600px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 30px;
+    text-transform: uppercase;
+    background-color: #036e01;
+    color: white;
+  }  
+
+  .center-button button:hover{
+    color: white;
+    background-color:rgb(198, 11, 48);
+    border-color:rgb(198, 11, 48);
+    transition:0.5s;
+  }

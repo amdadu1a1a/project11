@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+.banner{
+    height: 100px;
+    width: 100%;
+    background-color: #036e01;
+    position:fixed;
+}
+.navbar{
+    margin-top: -40px;
+    width: 95%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+img{
+    height: 180px;
+}
+.navbar ul{
+    margin-right: -60px;
+}
+.navbar ul li{
+    display: inline-block;
+    margin:0 80px;
+    font-size: 35px;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar ul li a{
+    color: #fff;
+}
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.fa-house, .fa-users-gear, .fa-user-circle,.fa-notes-medical {
+    font-size: 30px;
+    color: white;
+    margin-right: -60px;
+}
+.container{
+    padding-top: 150px;
+}
+.pay-form {
+    background: #fff;
+    width: 500px;
+    margin: 65px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pay-form h1 {
+    padding: 35px 35px 0 35px;
+    font-weight: 300;
+    font-size: 50px;
+    color: #036501;
+  }
+  .pay-form .content {
+    padding: 35px;
+    text-align: center;
+  }
+  
+  .pay-form .input-field {
+    padding: 12px 5px;
+  }
+  
+  .pay-form .input-field input {
+    font-size: 16px;
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    padding: 10px 1px;
+    border: 0;
+    border-bottom: 1px solid #747474;
+    outline: none;
+    transition: all .2s;
+  }
+  .pay-form .input-field input::-webkit-input-placeholder {
+    text-transform: uppercase;
+  }
+  
+  .pay-form .input-field input::-moz-placeholder {
+    text-transform: uppercase;
+  }
+  
+  .pay-form .input-field input:-ms-input-placeholder {
+    text-transform: uppercase;
+  }
+  
+  .pay-form .input-field input::-ms-input-placeholder {
+    text-transform: uppercase;
+  }
+  
+  .pay-form .input-field input::placeholder {
+    text-transform: uppercase;
+  }
+  
+  .pay-form .input-field input:focus {
+    border-color: #222;
+  }
+  .container .buton{
+    width: 100%;
+  border: none;
+  padding: 18px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid;
+  border-radius:0 0 5px 5px;
+  background-color: #036e01;
+  color: white;
+  font-size: 20px;
+  }
+  .container .buton:hover{
+    background: #c00013;;
+    color: white;
+    transition: 0.5s ease;
+  }

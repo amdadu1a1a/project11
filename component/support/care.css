@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.banner {
+    height: 100px;
+    width: 100%;
+    background-color: #036e01;
+    position: fixed;
+}
+
+.navbar {
+    margin-top: -40px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+img {
+    height: 180px;
+}
+
+.navbar ul {
+    margin-right: -60px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 70px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: #fff;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+.fa-house,
+.fa-users-gear,
+.fa-user-circle,
+.fa-notes-medical {
+    font-size: 30px;
+    color: white;
+    margin-right: -60px;
+}
+
+.container {
+    padding-top: 100px;
+}
+
+table {
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr th {
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(205, 4, 4);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f2f2f2;
+}
+
+table tr td {
+    padding-top: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+table tr td h2{
+    margin-bottom: 20px;
+}
+table tr td h3{
+    margin-top:10px;
+}
+button{
+    background-color: #036e01;
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #c00013;
+    color: white;
+    border-color: #ea081f;
+    transition: 0.5s;
+}

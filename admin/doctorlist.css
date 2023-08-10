@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+.banner{
+    height: 100px;
+    width: 100%;
+    background-color: #036e01;
+    position:fixed;
+}
+.navbar{
+    margin-top: -40px;
+    width: 95%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+img{
+    height: 180px;
+}
+.navbar ul{
+    margin-right: -60px;
+}
+.navbar ul li{
+    display: inline-block;
+    margin:0 70px;
+    font-size: 35px;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    position: relative;
+}
+.navbar ul li a{
+    color: #fff;
+}
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+.container{
+    padding-top: 100px;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 5px;
+}
+
+.form-group input[type="submit"] {
+    width: auto;
+    align-self: flex-start;
+}
+
+.banner {
+    height: 100px;
+    width: 100%;
+    background-color: #036e01;
+    position: fixed;
+}
+
+.navbar {
+    margin-top: -40px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.logo {
+    height: 180px;
+    width: auto;
+}
+
+.navbar ul {
+    margin-right: -60px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 80px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: #fff;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+.fa-house,
+.fa-users-gear,
+.fa-user-doctor,
+.fa-user-circle {
+    font-size: 30px;
+    color: white;
+    margin-right: -60px;
+}
+.container label{
+    font-size: 40px;
+    float: left;
+}
+.container input{
+    width:100vh;
+    height:30px;
+    border: 2px solid;
+    border-radius: 3px;
+}
+.bton{
+    height: 30px;
+    width: 90px;
+    cursor: pointer;
+    border: 3px solid;
+    border-radius: 2px;
+    border-color: #036e01;
+    background-color: #036e01;
+    color: #fff;
+}
+.bton:hover{
+    background: #c00013;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+    border-color: #c00013;
+}
+.main{
+    align-items: center;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+table{
+    margin-top: 50px;
+    width: 100%;
+    border-collapse: collapse;
+}
+table tr th{
+    font-size: 30px;
+}
+
+th, td {
+    padding-left: 80px;
+    margin-right:40px;;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
+
+h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+h4 {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.buy {
+    padding: 10px 30px;
+    background-color: #036e01;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 4px;
+    flex: 1; /* Makes buttons take up equal height */
+  }
+  
+  .buy:hover {
+    background-color: #c00013;
+    transition: background-color 0.3s, color 0.3s;
+  }
